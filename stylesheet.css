@@ -1,28 +1,94 @@
-.button {
+div {
+  font-family:arial,sans-serif;
+  font-size:.9em;
+  border: 1px dotted gray;
+}
 
+a {
+  text-decoration:none;
+  color:#000;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+#search-form {
+  align:center;
+  margin:auto;
+  
+}
+.button {
+  font-weight:bold;
+  max-width:20em;
+  margin:auto;
+  height:100%;
+  background-color:#F8F8F8;
+  border-radius:4%;
+  color:#000;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 2px;
 }
 
 #google-logo {
-  align:center;
-  position:relative;
+  display:block;
+  margin:auto;
+  width: 40%;  
 }
 
 #search-box {
-
+  display:block;
+  margin:auto;
+  padding:20px;
+  width: 40%;
+  
 }
 
 #top-nav {
-  position: top;
-  height:25px;
-  background:gray;
+  horizontal-align:right; 
+  width:100%;
+  right:0px;
+  line-height:1.5;
+  display:inline-block;
+  font-size:.8em;
+  vertical-align:middle;
+}
+
+#top-nav-container {
+  float:right;
+}
+
+ul {
+  list-style-type: none;
+  overflow:hidden;
+}
+
+li {
+  float:left;  
+  margin: 1px;
+  padding: 10px 16px;
+}
+
+#sign-in-button {
+  font-weight:bold;
+  max-width:4em;
+  margin:auto;
+  height:100%;
+  border:1px solid #4285f4;
+  background-color:#4683ea;
+  corner-radius:4px;
+  color:#fff;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 2px;
+  
 }
 
 #bottom-nav {
   font-family:arial,sans-serif;
   bottom: 0;
-  font-size:10pt;
-  height:35px;
-  position:absolute
+  font-size:1em;
+  position:absolute;
   width:100%;
-  background:gray;
+  background:#f2f2f2;
 }
