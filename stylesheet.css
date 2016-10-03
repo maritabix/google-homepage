@@ -1,94 +1,102 @@
-div {
-  font-family:arial,sans-serif;
-  font-size:.9em;
-  /* border: 1px dotted gray; */
+
+body {
+  font-family:sans-serif;
+  font-size:.85em;
 }
 
 a {
+  color:#888;
   text-decoration:none;
-  color:#000;
 }
 
-a:hover {
-  text-decoration:underline;
-}
-#search-form {
-  align:center;
-  margin:auto;
-  
-}
-.button {
-  font-weight:bold;
-  max-width:20em;
-  margin:auto;
-  height:100%;
-  background-color:#F8F8F8;
-  border-radius:4%;
-  color:#000;
-  text-align: center;
-  display: inline-block;
-  padding: 5px 2px;
-}
-
-#google-logo {
-  display:block;
-  margin:auto;
-  width: 40%;  
-}
-
-#search-box {
-  display:block;
-  margin:auto;
-  padding:20px;
-  width: 40%;
-  
-}
-
-#top-nav {
-  horizontal-align:right; 
-  width:100%;
-  right:0px;
-  line-height:1.5;
-  display:inline-block;
-  font-size:.8em;
-  vertical-align:middle;
-}
-
-#top-nav-container {
-  float:right;
-}
+a:hover {text-decoration:underline;}
 
 ul {
-  list-style-type: none;
-  overflow:hidden;
+  list-style-type:none;
 }
 
 li {
-  float:left;  
-  margin: 1px;
-  padding: 10px 16px;
+  display:inline;
+}
+#the-search-box {
+  width:500px;
+  height:30px;
 }
 
-#sign-in-button {
-  font-weight:bold;
-  max-width:4em;
+#mic-logo {
+ 
+}
+
+#glogo {
+  position:relative; /*this allows top 200px to put image lower on page */
+  display:block; /* this allows margin:auto to center the image */
   margin:auto;
-  height:100%;
-  border:1px solid #4285f4;
-  background-color:#4683ea;
-  corner-radius:4px;
-  color:#fff;
-  text-align: center;
-  display: inline-block;
-  padding: 5px 2px;
-  
+  top:200px;
+  width:500px;
 }
 
-#bottom-nav {
-  font-family:arial,sans-serif;
-  bottom: 0;
-  font-size:1em;
-  position:absolute;
-  width:100%;
-  background:#f2f2f2;
+#glogo img {
+  display: block;
+  margin:auto;
 }
+
+#top-menu {
+  float:right;
+}
+
+#top-menu:after {
+  content: "";
+  display:block;
+  clear:both;
+}
+
+.search-form {
+  height:30px;
+}
+
+.search-form img {
+  height:20px;
+  float:right;
+}
+.search-form:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+#button {
+  margin: 0 auto;
+  font: bold 11px/27px Arial, sans-serif!important;
+  vertical-align: top;
+  color: #444!important;
+  background: #f5f5f5;
+  border: 1px solid #dcdcdc;
+  height: 29px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#bottom {
+  position:absolute;
+  min-width:980px;
+  background: #f2f2f2;
+  width:100%;
+  height:35px;
+  bottom: 0px;
+}
+
+#bottom-nav-left {
+  position:absolute;
+  bottom:-4px;
+}
+
+#bottom-nav-right
+ {
+  position:absolute;
+  bottom:-4px;
+  right:30px;
+}
+
